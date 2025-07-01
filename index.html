@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAH Article Practice Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal" id="infoModal">
+    <!-- <i class="fas fa-info-circle"></i> -->
+    <h2>RAH Article Practice Game</h2>
+    <p>Specially designed for grammar article practice.</p>
+    <p>Game Created By: <strong>Rimsha Akhter Humaiyun</strong></p>
+    <p><strong>How to Play:</strong> You will get 30 MCQs. Choose the correct article (A, An, The). One chance per question.</p>
+    <p><strong>Score Colors:</strong> <span style="color:#e74c3c">Red = Poor</span>, <span style="color:#2980b9">Blue = Average</span>, <span style="color:#27ae60">Green = Excellent</span></p>
+    <button onclick="showNameModal()">Next</button>
+  </div>
+
+  <div class="modal hidden" id="nameModal">
+    <!-- <i class="fas fa-user"></i> -->
+    <h2>Enter Your Name</h2>
+    <input type="text" id="username" placeholder="Your Name" />
+    <button onclick="startGame()">Start</button>
+  </div>
+
+  <div class="quiz-container hidden" id="quizContainer">
+    <h3 id="playerName"></h3>
+    <h4 id="questionNumber"></h4>
+    <div class="question" id="questionText"></div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <div class="scoreboard hidden" id="scoreboard">
+    <i class="fas fa-chart-line"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
